@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+  redis:
+    image: redis
+    container_name: redis
+    hostname: redis
+    ports:
+    - '6379:6379'
+
+#  gatling:
+#    image: denvazh/gatling
+#    volumes:
+#      - ./gatling/conf:/opt/gatling/conf
+#      - ./gatling/user-files/simulations:/opt/gatling/user-files/simulations
+#      - ./gatling/results:/opt/gatling/results

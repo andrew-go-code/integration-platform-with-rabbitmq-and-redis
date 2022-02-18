@@ -1,0 +1,17 @@
+server:
+  port: 1000
+
+spring:
+  rabbitmq:
+    addresses: 127.0.0.1:5672
+    username: "guest"
+    password: "guest"
+app:
+  fakeDelayInMs: 100
+  mq:
+    in:
+      exchangeName: "req-msg-exchange"
+      queueName: "request"
+    out:
+      exchangeName: "res-msg-exchange"
+      queueName: "response"

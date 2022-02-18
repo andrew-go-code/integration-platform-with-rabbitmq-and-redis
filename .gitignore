@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/gatling-test/.gradle/
+/gatling-test/build/

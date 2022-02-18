@@ -11,5 +11,5 @@ After a request is sent, the app tries to find the response message in the cache
 #### mq-response-app
 It listens to the "request" queue and sends the result to the "response" queue with relational correlationId.
 
-### gutling-test
+#### gutling-test
 It emulates requests for mq-request-app
